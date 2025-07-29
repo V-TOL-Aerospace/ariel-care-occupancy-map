@@ -1,0 +1,8 @@
+{
+  "name": "ariel-care-occupancy-map",
+  "files": [
+    {
+      "recursive": 1
+    }
+  ]
+}

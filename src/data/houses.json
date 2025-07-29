@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "timestamp": "2025-07-29T20:00:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1",
+        "name": "House #1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.96388917890303,
+          -27.61540601339959
+        ]
+      },
+      "id": "node/1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2",
+        "name": "House #2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.97488917890303,
+          -27.62640601339959
+        ]
+      },
+      "id": "node/2"
+    }
+  ]
+}
