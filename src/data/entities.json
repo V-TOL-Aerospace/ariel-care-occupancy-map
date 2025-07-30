@@ -1,0 +1,20 @@
+{
+    "entities": [
+        {
+            "id": "entity/sda_smart_homes",
+            "name": "SDA Smart Homes",
+            "address": "912 Stanley Street East, East Brisbane, Queensland 4169",
+            "web": "https://sdasmarthomes.com.au",
+            "email": "info@sdasmarthomes.com.au",
+            "phone": "+61738993873"
+        },
+        {
+            "id": "entity/sil_operator_a",
+            "name": "SIL Operator A",
+            "address": "SIL Address",
+            "web": "sil.com.au",
+            "email": "info@sil.com.au",
+            "reserve_api": "https://sil.com.au/reserve/{}"
+        }
+    ]
+}

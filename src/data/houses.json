@@ -3,10 +3,23 @@
   "timestamp": "2025-07-29T20:00:00Z",
   "features": [
     {
+      "id": "node/1",
       "type": "Feature",
       "properties": {
-        "@id": "node/1",
-        "name": "House #1"
+        "name": "House #1",
+        "address": "House Address #1",
+        "status": "ready",
+        "occupation": {
+          "rooms": 4,
+          "participants": 2,
+          "hospice": 1
+        },
+        "features": [
+          "Ariel.Care 2.0"
+        ],
+        "manager": "entity/sda_smart_homes",
+        "operator": "entity/sil_operator_a",
+        "reserve_id": "house-1"
       },
       "geometry": {
         "type": "Point",
@@ -14,14 +27,26 @@
           152.96388917890303,
           -27.61540601339959
         ]
-      },
-      "id": "node/1"
+      }
     },
     {
+      "id": "node/2",
       "type": "Feature",
       "properties": {
-        "@id": "node/2",
-        "name": "House #2"
+        "name": "House #2",
+        "address": "House Address #2",
+        "status": "building",
+        "occupation": {
+          "rooms": 4,
+          "participants": 2,
+          "hospice": 1
+        },
+        "features": [
+          "Ariel.Care 2.0"
+        ],
+        "manager": "entity/sda_smart_homes",
+        "operator": "entity/sil_operator_a",
+        "reserve_id": "house-2"
       },
       "geometry": {
         "type": "Point",
@@ -29,8 +54,7 @@
           152.97488917890303,
           -27.62640601339959
         ]
-      },
-      "id": "node/2"
+      }
     }
   ]
 }
