@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HouseListComponent from "./HouseListComponent.vue";
 import PopupComponent from "./PopupComponent.vue";
 import { ref, useTemplateRef } from "vue";
 
@@ -16,7 +17,7 @@ import type {RawResult} from 'leaflet-geosearch/lib/providers/openStreetMapProvi
 
 const zoom = ref<number>(4);
 const center = ref<L.PointTuple>([-26.74561038219901, 135.45788264176022]);
-const markers = useTemplateRef<L.Marker[]>('markers')
+const markers = useTemplateRef<typeof LMarker[]>('markers')
 const fly_options = {
   animate: true,
   duration: 3
@@ -33,14 +34,23 @@ const searchControl = GeoSearchControl({
 });
 
 function hotfix_set_search_bounds(map:L.Map, result:any) {
-  if(result.location?.bounds)
-    map.flyToBounds(result.location?.bounds, fly_options);
+  if(!result.location) {
+    console.warn("Invalid location provided");
+    return;
+  }
 
-  searchControl.clearResults();
+  map.flyToBounds(result.location?.bounds, fly_options);
+
+  // searchControl.clearResults();
+  console.log(`Result address: ${result.location.label}`);
+  console.log(`Result geo: [${result.location.x}, ${result.location.y}]`);
 }
 
+let myMap:L.Map|null = null;
 function mapReady(map:L.Map) {
+  myMap = map;
   map.zoomControl.setPosition("topright")
+  map.removeControl(map.attributionControl);
 
   searchControl.addTo(map);
   map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
@@ -56,9 +66,8 @@ function mapReady(map:L.Map) {
   let lng_min = Number.MAX_VALUE;
   let lng_max = -Number.MAX_VALUE;
   for(const m of valid_markers) {
-    const rawObject = JSON.parse(JSON.stringify(m));
-
-    const pos = rawObject.latLng as L.LatLngTuple;
+    // const rawObject = JSON.parse(JSON.stringify(m));
+    const pos = m.latLng as L.LatLngTuple;
     if(pos[0] < lat_min) lat_min = pos[0];
     if(pos[0] > lat_max) lat_max = pos[0];
     if(pos[1] < lng_min) lng_min = pos[1];
@@ -76,6 +85,30 @@ function get_entity_by_id(id?:string) {
 
   return entities.entities.find(x => x.id == id);
 }
+
+function listReady(context: typeof LControl) {
+  context.setPosition("bottomleft");
+}
+
+function listItemClicked(id:string) {
+  if(!myMap) return;
+
+  // const m = markers.value?.find(x => x.name == id);
+  // if(!m) return;
+
+  // console.log(m.name);
+  // console.log(m.getLatLng())
+  myMap.eachLayer(layer => { 
+    if (layer.options.attribution == id) {
+        const m = layer as L.Marker;
+        m.openPopup()
+        setTimeout(() => {
+          myMap?.flyTo(m.getLatLng(), 16, fly_options),
+          2000
+        });
+    } 
+  });
+}
 </script>
 
 <template>
@@ -86,7 +119,7 @@ function get_entity_by_id(id?:string) {
       name="OpenStreetMap"
     ></l-tile-layer>
     <!-- <l-control>{{searchControl.getContainer() }}</l-control> -->
-    <l-marker v-for="house of houses.features" ref="markers" :lat-lng="house.geometry.coordinates.reverse() as L.PointTuple">
+    <l-marker v-for="house of houses.features" ref="markers" :attribution="house.id" :lat-lng="house.geometry.coordinates.reverse() as L.PointTuple">
       <l-popup>
         <PopupComponent
           :id="house.id"
@@ -96,5 +129,18 @@ function get_entity_by_id(id?:string) {
         ></PopupComponent>
       </l-popup>
     </l-marker>
+    <l-control id="house-list" class="leaflet-bar leaflet-touch" @ready="listReady" :disable-scroll-propagation="true">
+      <HouseListComponent :houses="new Map(houses.features.map(x => [x.id, x.properties]))" @click="listItemClicked"/>
+    </l-control>
   </l-map>
 </template>
+
+<style scoped>
+#house-list {
+  background-color: var(--color-background);
+  max-height: 50vh;
+  max-width: 25vw;
+  overflow: scroll;
+  padding: 1rem;
+}
+</style>

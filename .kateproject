@@ -2,6 +2,7 @@
   "name": "ariel-care-occupancy-map",
   "files": [
     {
+      "git": 1,
       "recursive": 1
     }
   ]

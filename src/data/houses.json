@@ -7,7 +7,7 @@
       "type": "Feature",
       "properties": {
         "name": "House #1",
-        "address": "House Address #1",
+        "address": "Amara Crescent, Pine Village, Forest Lake, Greater Brisbane, Queensland, 4078, Australia",
         "status": "ready",
         "occupation": {
           "rooms": 4,
@@ -24,8 +24,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          152.96388917890303,
-          -27.61540601339959
+          152.96331846871567,
+          -27.615558118830656
         ]
       }
     },
@@ -34,12 +34,12 @@
       "type": "Feature",
       "properties": {
         "name": "House #2",
-        "address": "House Address #2",
+        "address": "Princeton Place, College Park, Forest Lake, Greater Brisbane, Queensland, 4078, Australia",
         "status": "building",
         "occupation": {
           "rooms": 4,
-          "participants": 2,
-          "hospice": 1
+          "participants": 1,
+          "hospice": 2
         },
         "features": [
           "Ariel.Care 2.0"
@@ -51,8 +51,62 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          152.97488917890303,
-          -27.62640601339959
+          152.9740417828119,
+          -27.62703671598933
+        ]
+      }
+    },
+    {
+      "id": "node/3",
+      "type": "Feature",
+      "properties": {
+        "name": "House #3",
+        "address": "Ivy Street, Springfield, Greater Brisbane, Queensland, 4300, Australia",
+        "status": "building",
+        "occupation": {
+          "rooms": 4,
+          "participants": 1,
+          "hospice": 3
+        },
+        "features": [
+          "Ariel.Care 2.0"
+        ],
+        "manager": "entity/sda_smart_homes",
+        "operator": "entity/sil_operator_a",
+        "reserve_id": "house-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.9177530484053,
+          -27.646635479989452
+        ]
+      }
+    },
+    {
+      "id": "node/4",
+      "type": "Feature",
+      "properties": {
+        "name": "House #4",
+        "address": "Skylark Street, Brentwood Forest, Bellbird Park, Greater Brisbane, Queensland, 4300, Australia",
+        "status": "building",
+        "occupation": {
+          "rooms": 4,
+          "participants": 0,
+          "hospice": 0
+        },
+        "features": [
+          "Ariel.Care 2.0"
+        ],
+        "manager": "entity/sda_smart_homes",
+        "operator": "entity/sil_operator_a",
+        "reserve_id": "house-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          152.8902402575321,
+          -27.638266990076165
         ]
       }
     }
