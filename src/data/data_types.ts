@@ -1,3 +1,5 @@
+import type { LatLngExpression } from "leaflet"
+
 export interface EntityProperties {
     name: string
     address: string
@@ -26,7 +28,12 @@ export interface HouseProperties {
     reserve_id?: string,
 }
 
-export type HouseList = Map<string,HouseProperties>;
+export interface HouseEntry {
+    location: LatLngExpression;
+    properties: HouseProperties;
+}
+
+export type HouseList = Map<string, HouseEntry>;
 export type ClickItemWithID = (id:string)=>void;
 
 export const default_manager: EntityProperties = {

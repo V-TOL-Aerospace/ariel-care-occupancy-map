@@ -15,11 +15,11 @@ const emit = defineEmits<{
   <section>
     <HoustListItemComponent v-for="[key, house] of houses.entries()" @click="emit('click', key)"
       :id="key"
-      :name="house.name"
-      :address="house.address"
-      :status="house.status"
-      :occupation="house.occupation"
-      :features="house.features"
+      :name="house.properties.name"
+      :address="house.properties.address"
+      :status="house.properties.status"
+      :occupation="house.properties.occupation"
+      :features="house.properties.features"
     >
     </HoustListItemComponent>
   </section>

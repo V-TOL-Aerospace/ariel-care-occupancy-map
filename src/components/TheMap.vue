@@ -3,17 +3,16 @@ import HouseListComponent from "./HouseListComponent.vue";
 import PopupComponent from "./PopupComponent.vue";
 import { ref, useTemplateRef } from "vue";
 
-import houses from "@/data/houses.json";
 import entities from "@/data/entities.json";
-import { default_manager } from "@/data/data_types";
+import { default_manager, type HouseList } from "@/data/data_types";
 
 import 'leaflet-geosearch/dist/geosearch.css';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { LMap, LTileLayer, LMarker, LPopup, LControl } from "@vue-leaflet/vue-leaflet";
 import { GeoSearchControl, OpenStreetMapProvider} from 'leaflet-geosearch';
-import type {SearchResult} from 'leaflet-geosearch/lib/providers/provider.d.ts'
-import type {RawResult} from 'leaflet-geosearch/lib/providers/openStreetMapProvider.d.ts'
+import { get as get_remote, source_name as remote_name } from "@/data/thedisabilityhousingcentre";
+import { get as get_demo, source_name as demo_name } from "@/data/demo";
 
 const zoom = ref<number>(4);
 const center = ref<L.PointTuple>([-26.74561038219901, 135.45788264176022]);
@@ -21,6 +20,22 @@ const markers = useTemplateRef<typeof LMarker[]>('markers')
 const fly_options = {
   animate: true,
   duration: 3
+}
+
+const houses = ref<HouseList>(new Map());
+
+function onCreated() {
+  console.log(`Loading from source: ${remote_name}`);
+  get_remote().then(x => {
+    if(x) {
+      houses.value = x;
+      return;
+    }
+
+    get_demo().then(y => {
+        houses.value = y ?? new Map();
+    });
+  });
 }
 
 function onMapClick(e:L.LeafletMouseEvent) {
@@ -49,11 +64,12 @@ function hotfix_set_search_bounds(map:L.Map, result:any) {
 let myMap:L.Map|null = null;
 function mapReady(map:L.Map) {
   myMap = map;
-  map.zoomControl.setPosition("topright")
-  map.removeControl(map.attributionControl);
 
   searchControl.addTo(map);
   map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
+
+  map.zoomControl.setPosition("topleft")
+  map.removeControl(map.attributionControl);
 
   const valid_markers = markers.value?.filter(x => x != null);
   if(!valid_markers) {
@@ -87,7 +103,11 @@ function get_entity_by_id(id?:string) {
 }
 
 function listReady(context: typeof LControl) {
-  context.setPosition("bottomleft");
+  context.setPosition("topright");
+}
+
+function filterReady(context: typeof LControl) {
+  context.setPosition("topright");
 }
 
 function listItemClicked(id:string) {
@@ -119,18 +139,21 @@ function listItemClicked(id:string) {
       name="OpenStreetMap"
     ></l-tile-layer>
     <!-- <l-control>{{searchControl.getContainer() }}</l-control> -->
-    <l-marker v-for="house of houses.features" ref="markers" :attribution="house.id" :lat-lng="house.geometry.coordinates.reverse() as L.PointTuple">
+    <l-marker v-for="[key, house] of houses" ref="markers" :attribution="key" :lat-lng="house.location as L.PointTuple">
       <l-popup>
         <PopupComponent
-          :id="house.id"
+          :id="key"
           :house="house.properties"
           :operator="get_entity_by_id(house.properties.operator)"
           :manager="get_entity_by_id(house.properties.manager) ?? default_manager"
         ></PopupComponent>
       </l-popup>
     </l-marker>
+    <l-control id="house-filter" class="leaflet-bar leaflet-touch" @ready="filterReady" :disable-scroll-propagation="true">
+      <div>Filter Block</div>
+    </l-control>
     <l-control id="house-list" class="leaflet-bar leaflet-touch" @ready="listReady" :disable-scroll-propagation="true">
-      <HouseListComponent :houses="new Map(houses.features.map(x => [x.id, x.properties]))" @click="listItemClicked"/>
+      <HouseListComponent :houses="houses" @click="listItemClicked"/>
     </l-control>
   </l-map>
 </template>
