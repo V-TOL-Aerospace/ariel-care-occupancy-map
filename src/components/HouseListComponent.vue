@@ -20,6 +20,7 @@ const emit = defineEmits<{
       :status="house.properties.status"
       :occupation="house.properties.occupation"
       :features="house.properties.features"
+      :thumbnail="house.properties.image"
     >
     </HoustListItemComponent>
   </section>

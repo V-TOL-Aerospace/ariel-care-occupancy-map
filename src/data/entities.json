@@ -13,8 +13,7 @@
             "name": "SIL Operator A",
             "address": "SIL Address",
             "web": "sil.com.au",
-            "email": "info@sil.com.au",
-            "reserve_api": "https://sil.com.au/reserve/{}"
+            "email": "info@sil.com.au"
         }
     ]
 }

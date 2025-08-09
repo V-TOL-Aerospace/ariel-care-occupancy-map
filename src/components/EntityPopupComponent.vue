@@ -10,13 +10,13 @@
 
 import parsePhoneNumber from 'libphonenumber-js'
 
-defineProps<{
+const props = defineProps<{
   name: string,
   address: string,
   web?: string,
   email?: string,
   phone?: string,
-  reserve_link?: string,
+  reserve_link?: URL,
 }>()
 
 function pretty_print_phone(num:string) {
@@ -58,9 +58,6 @@ function uri_phone(num:string) {
       </div>
     </div>
   </section>
-  <div v-if="reserve_link" class="separate center" >
-    <a :href="reserve_link" target="_blank" rel="noopener noreferrer"><button>Make reservation</button></a>
-  </div>
 </template>
 
 <style scoped>
@@ -75,19 +72,5 @@ section > * {
 
 section .col {
   display: table-cell;
-}
-
-.separate {
-  margin: 1em;
-}
-/*
-.full-width {
-  width: 100%;
-} */
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 </style>

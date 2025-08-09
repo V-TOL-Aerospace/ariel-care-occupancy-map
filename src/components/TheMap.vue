@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import HouseListComponent from "./HouseListComponent.vue";
+import HouseFilterComponent from "./HouseFilterComponent.vue"
 import PopupComponent from "./PopupComponent.vue";
-import { ref, useTemplateRef } from "vue";
+import { ref, useTemplateRef, onBeforeMount, watch } from "vue";
 
 import entities from "@/data/entities.json";
-import { default_manager, type HouseList } from "@/data/data_types";
+import { default_manager, isLatLngTuple, type HouseList } from "@/data/data_types";
 
 import 'leaflet-geosearch/dist/geosearch.css';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { LMap, LTileLayer, LMarker, LPopup, LControl } from "@vue-leaflet/vue-leaflet";
 import { GeoSearchControl, OpenStreetMapProvider} from 'leaflet-geosearch';
-import { get as get_remote, source_name as remote_name } from "@/data/thedisabilityhousingcentre";
-import { get as get_demo, source_name as demo_name } from "@/data/demo";
+import { load_first } from "@/data/loader";
 
 const zoom = ref<number>(4);
 const center = ref<L.PointTuple>([-26.74561038219901, 135.45788264176022]);
@@ -23,20 +23,6 @@ const fly_options = {
 }
 
 const houses = ref<HouseList>(new Map());
-
-function onCreated() {
-  console.log(`Loading from source: ${remote_name}`);
-  get_remote().then(x => {
-    if(x) {
-      houses.value = x;
-      return;
-    }
-
-    get_demo().then(y => {
-        houses.value = y ?? new Map();
-    });
-  });
-}
 
 function onMapClick(e:L.LeafletMouseEvent) {
   console.log(`Click: [${e.latlng.lat}, ${e.latlng.lng}]`);
@@ -62,16 +48,9 @@ function hotfix_set_search_bounds(map:L.Map, result:any) {
 }
 
 let myMap:L.Map|null = null;
-function mapReady(map:L.Map) {
-  myMap = map;
 
-  searchControl.addTo(map);
-  map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
-
-  map.zoomControl.setPosition("topleft")
-  map.removeControl(map.attributionControl);
-
-  const valid_markers = markers.value?.filter(x => x != null);
+function do_zoom(group: typeof LMarker[]) {
+  const valid_markers = group.filter(x => x != null);
   if(!valid_markers) {
     console.log("No valid markers")
     return;
@@ -82,19 +61,53 @@ function mapReady(map:L.Map) {
   let lng_min = Number.MAX_VALUE;
   let lng_max = -Number.MAX_VALUE;
   for(const m of valid_markers) {
-    // const rawObject = JSON.parse(JSON.stringify(m));
-    const pos = m.latLng as L.LatLngTuple;
-    if(pos[0] < lat_min) lat_min = pos[0];
-    if(pos[0] > lat_max) lat_max = pos[0];
-    if(pos[1] < lng_min) lng_min = pos[1];
-    if(pos[1] > lng_max) lng_max = pos[1];
+    const pos = m.latLng as L.LatLngExpression;
+    if(isLatLngTuple(pos)) {
+      if(pos[0] < lat_min) lat_min = pos[0];
+      if(pos[0] > lat_max) lat_max = pos[0];
+      if(pos[1] < lng_min) lng_min = pos[1];
+      if(pos[1] > lng_max) lng_max = pos[1];
+    } else {
+      if(pos.lat < lat_min) lat_min = pos.lat;
+      if(pos.lat > lat_max) lat_max = pos.lat;
+      if(pos.lng < lng_min) lng_min = pos.lng;
+      if(pos.lng > lng_max) lng_max = pos.lng;
+    }
   }
 
   setTimeout(() => {
-    map.flyToBounds([[lat_min, lng_min], [lat_max, lng_max]], fly_options),
+    myMap?.flyToBounds([[lat_min, lng_min], [lat_max, lng_max]], fly_options),
     2000
   });
 }
+
+watch(markers, (value_new, _) => { if(value_new) do_zoom(value_new)}, {deep: true});
+
+function mapReady(map:L.Map) {
+  myMap = map;
+
+  searchControl.addTo(map);
+  map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
+
+  map.zoomControl.setPosition("topleft")
+  map.removeControl(map.attributionControl);
+
+  const el = map.getContainer();
+  for(const e of el.getElementsByClassName("leaflet-right")) {
+    (e as HTMLElement).style.display = "flex";
+    (e as HTMLElement).style.flexDirection = "column";
+    (e as HTMLElement).style.maxHeight = "100%";
+  }
+}
+
+
+async function get_data() {
+  houses.value = await load_first();
+}
+
+onBeforeMount(() => {
+  get_data();
+})
 
 function get_entity_by_id(id?:string) {
   if(!id) return undefined;
@@ -118,7 +131,7 @@ function listItemClicked(id:string) {
 
   // console.log(m.name);
   // console.log(m.getLatLng())
-  myMap.eachLayer(layer => { 
+  myMap.eachLayer(layer => {
     if (layer.options.attribution == id) {
         const m = layer as L.Marker;
         m.openPopup()
@@ -126,8 +139,12 @@ function listItemClicked(id:string) {
           myMap?.flyTo(m.getLatLng(), 16, fly_options),
           2000
         });
-    } 
+    }
   });
+}
+
+function filtersChanged(filters: any) {
+  console.log(filters)
 }
 </script>
 
@@ -150,7 +167,7 @@ function listItemClicked(id:string) {
       </l-popup>
     </l-marker>
     <l-control id="house-filter" class="leaflet-bar leaflet-touch" @ready="filterReady" :disable-scroll-propagation="true">
-      <div>Filter Block</div>
+      <HouseFilterComponent @changed="filtersChanged"/>
     </l-control>
     <l-control id="house-list" class="leaflet-bar leaflet-touch" @ready="listReady" :disable-scroll-propagation="true">
       <HouseListComponent :houses="houses" @click="listItemClicked"/>
@@ -161,9 +178,24 @@ function listItemClicked(id:string) {
 <style scoped>
 #house-list {
   background-color: var(--color-background);
-  max-height: 50vh;
-  max-width: 25vw;
+  /* Full size box, minus the room for #house-filter and the top, spacing, and bottom margins */
+  max-height: 100%;
+  width: 30vw;
   overflow: scroll;
   padding: 1rem;
+  margin-bottom: 10px;
+  flex: auto;
+  flex-grow: 1;
+}
+
+#house-filter {
+  background-color: var(--color-background);
+  padding: 0.2rem;
+  min-height: 30px;
+  display: flex;
+  flex: auto;
+  flex-shrink: 0;
+  align-items: center;
+  width: 30vw;
 }
 </style>

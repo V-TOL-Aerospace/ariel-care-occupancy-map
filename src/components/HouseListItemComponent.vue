@@ -7,6 +7,7 @@ defineProps<{
   status: HouseStatus | string,
   occupation: OccupationProperties,
   features?: string[],
+  thumbnail?: URL,
 }>()
 
 function hospice_ratio(occupation: OccupationProperties) {
@@ -28,8 +29,9 @@ function availability(occupation: OccupationProperties) {
 
 <template>
   <div>
-    <h1>{{ name }}</h1  >
-    <div>address</div>
+    <img v-if="thumbnail" :src="thumbnail.href"/></img>
+    <h2>{{ name }}</h2>
+    <div>{{ address }}</div>
     <div>Status: {{ status }}</div>
     <section>
       <!-- <header>
@@ -44,7 +46,7 @@ function availability(occupation: OccupationProperties) {
       <div class="row">
         <div class="col">Available:</div>
         <div class="col">{{ availability(occupation) }}</div>
-      </div>  
+      </div>
       <div class="row">
         <div class="col">Hospice Ratio:</div>
         <div class="col">{{ (hospice_ratio(occupation) * 100).toFixed() }}%</div>
@@ -71,5 +73,11 @@ section > * {
 
 section .col {
   display: table-cell;
+}
+
+img {
+  width: 100%;
+  border-radius: 0.2rem;
+  object-fit: contain;
 }
 </style>

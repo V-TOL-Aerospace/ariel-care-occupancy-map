@@ -1,4 +1,4 @@
-import type { LatLngExpression } from "leaflet"
+import type { LatLngExpression, LatLngTuple } from "leaflet"
 
 export interface EntityProperties {
     name: string
@@ -6,7 +6,6 @@ export interface EntityProperties {
     web?: string
     email?: string
     phone?: string
-    reserve_api?: string
 }
 
 export interface OccupationProperties {
@@ -25,7 +24,8 @@ export interface HouseProperties {
     manager: string,
     features?: string[],
     operator?: string,
-    reserve_id?: string,
+    reserve_url?: URL,
+    image?: URL,
 }
 
 export interface HouseEntry {
@@ -39,4 +39,8 @@ export type ClickItemWithID = (id:string)=>void;
 export const default_manager: EntityProperties = {
     name: "No manager",
     address: "Unknown"
+}
+
+export function isLatLngTuple(item: any): item is LatLngTuple {
+    return item.length && item.length > 2;
 }
