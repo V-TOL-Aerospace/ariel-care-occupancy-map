@@ -2,7 +2,7 @@ import type { HouseEntry, HouseList, HouseProperties } from "./data_types";
 
 export const source_name = "The Disabilty Housing Centre";
 
-const url = '/get/thedisabilityhousingcentre';
+const url = false ? '/get/thedisabilityhousingcentre' : 'https://thedisabilityhousingcentre.com.au/search-results/';    //TODO: Check correct fix for dev
 const idStartsWith = "post-"
 
 export async function get(): Promise<HouseList | undefined> {
