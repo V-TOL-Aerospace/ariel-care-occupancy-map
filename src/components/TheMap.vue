@@ -81,7 +81,10 @@ function do_zoom(group: typeof LMarker[]) {
   });
 }
 
-watch(markers, (value_new, _) => { if(value_new) do_zoom(value_new)}, {deep: true});
+watch(markers, (value_new, _) => {
+  if(value_new)
+    do_zoom(value_new);
+}, {deep: true});
 
 function mapReady(map:L.Map) {
   myMap = map;
@@ -90,7 +93,8 @@ function mapReady(map:L.Map) {
   map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
 
   map.zoomControl.setPosition("topleft")
-  map.removeControl(map.attributionControl);
+  map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
+  map.attributionControl.remove();  //TODO: Remove this once we have the marker ID / attribution issue sorted
 
   const el = map.getContainer();
   for(const e of el.getElementsByClassName("leaflet-right")) {
@@ -132,6 +136,7 @@ function listItemClicked(id:string) {
   // console.log(m.name);
   // console.log(m.getLatLng())
   myMap.eachLayer(layer => {
+    //TODO: Find another way to do this without attribution
     if (layer.options.attribution == id) {
         const m = layer as L.Marker;
         m.openPopup()
@@ -153,10 +158,11 @@ function filtersChanged(filters: any) {
     <l-tile-layer
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       layer-type="base"
+      attribution='Data by &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, under <a href="https://opendatacommons.org/licenses/odbl/">ODbL.</a>'
       name="OpenStreetMap"
     ></l-tile-layer>
     <!-- <l-control>{{searchControl.getContainer() }}</l-control> -->
-    <l-marker v-for="[key, house] of houses" ref="markers" :attribution="key" :lat-lng="house.location as L.PointTuple">
+    <l-marker v-for="[key, house] of houses" ref="markers" :attribution="key" :lat-lng="house.location as L.PointTuple" :id="key">
       <l-popup>
         <PopupComponent
           :id="key"
