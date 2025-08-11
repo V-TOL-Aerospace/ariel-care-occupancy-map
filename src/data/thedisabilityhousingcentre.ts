@@ -1,11 +1,53 @@
 import type { HouseEntry, HouseList, HouseProperties } from "./data_types";
+import { LatLng } from "leaflet";
+import _cached from "./thedisabilityhousingcentre.json";
 
 export const source_name = "The Disabilty Housing Centre";
 
-const url = false ? '/get/thedisabilityhousingcentre' : 'https://thedisabilityhousingcentre.com.au/search-results/';    //TODO: Check correct fix for dev
+const url = '/get/thedisabilityhousingcentre';
 const idStartsWith = "post-"
 
-export async function get(): Promise<HouseList | undefined> {
+function _clean_properties(v:any): HouseProperties {
+    let h:HouseProperties = {
+        name: v.name ?? "",
+        address: v.address ?? "",
+        status: v.status ?? "",
+        occupation: v.occupation ?? "",
+        manager: v.manager ?? ""
+    }
+
+    if(v.features)
+        h.features = v.features;
+    if(v.operator)
+        h.operator = v.operator;
+    if(v.reserve_url)
+        h.reserve_url = new URL(v.reserve_url);
+    if(v.image)
+        h.image = new URL(v.image);
+
+    return h;
+}
+
+function _clean_location(v:any) {
+    return new LatLng(v.lat, v.lng);
+}
+
+function _clean_entry(v:any): HouseEntry {
+    return {
+        location: _clean_location(v.location),
+        properties: _clean_properties(v.properties)
+    };
+}
+
+async function _get_cached(): Promise<HouseList | undefined> {
+    console.log("Using cached data");
+    const houses:HouseList = new Map(Object.entries(_cached).map(x => [x[0], _clean_entry(x[1])] ));
+    return Promise.resolve(houses);
+}
+
+async function _get_real(): Promise<HouseList | undefined> {
+    console.log("Attempting data scrape");
+
     const response = await fetch(url);
     if(!response) return;
 
@@ -16,7 +58,12 @@ export async function get(): Promise<HouseList | undefined> {
     const doc = parser.parseFromString(html, "text/html");
 
     const map_node = doc.getElementsByClassName("es-map")[0];
-    const locations = JSON.parse(map_node.getAttribute("data-listings") ?? "{}");
+    const locations_dirty = JSON.parse(map_node.getAttribute("data-listings") ?? "{}");
+    // console.log(locations_dirty);
+    const locations = new Map(Object.entries(locations_dirty).map(x => {
+        const p:any = x[1];
+        return [x[0], new LatLng(p.lat, p.lng)];
+    }));
     // console.log(locations);
 
     const houses:HouseList = new Map();
@@ -49,7 +96,7 @@ export async function get(): Promise<HouseList | undefined> {
         // console.log(extras);
 
         const house:HouseEntry = {
-            location: locations[id] ?? [0,0],
+            location: locations.get(id) ?? [0,0],
             properties: {
                 name: title,
                 address: "Address on request",
@@ -66,5 +113,16 @@ export async function get(): Promise<HouseList | undefined> {
         houses.set(id, house);
     }
 
+    console.log(Object.fromEntries(houses.entries()));
+
     return houses;
+}
+
+const use_dev_mode = false;
+function _is_dev() {
+    return (location.hostname === "localhost" || location.hostname === "127.0.0.1") && use_dev_mode;
+}
+
+export async function get(): Promise<HouseList | undefined> {
+    return _is_dev() ? _get_real() : _get_cached();
 }
