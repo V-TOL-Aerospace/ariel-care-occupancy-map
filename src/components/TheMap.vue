@@ -1,22 +1,21 @@
 <script setup lang="ts">
 import HouseListComponent from "./HouseListComponent.vue";
 import HouseFilterComponent from "./HouseFilterComponent.vue"
-import PopupComponent from "./PopupComponent.vue";
 import { ref, useTemplateRef, onBeforeMount, watch } from "vue";
 
-import entities from "@/data/entities.json";
-import { default_manager, isLatLngTuple, type HouseList } from "@/data/data_types";
+import { isLatLngTuple, type HouseList } from "@/data/data_types";
 
 import 'leaflet-geosearch/dist/geosearch.css';
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-import { LMap, LTileLayer, LMarker, LPopup, LControl } from "@vue-leaflet/vue-leaflet";
+import L, { LatLng } from "leaflet";
+import { LMap, LTileLayer, LMarker, LControl } from "@vue-leaflet/vue-leaflet";
 import { GeoSearchControl, OpenStreetMapProvider} from 'leaflet-geosearch';
 import { load_first } from "@/data/loader";
+import MarkerComponent from "./MarkerComponent.vue";
 
 const zoom = ref<number>(4);
 const center = ref<L.PointTuple>([-26.74561038219901, 135.45788264176022]);
-const markers = useTemplateRef<typeof LMarker[]>('markers')
+const markers = useTemplateRef<typeof MarkerComponent[]>('markers')
 const fly_options = {
   animate: true,
   duration: 3
@@ -49,7 +48,7 @@ function hotfix_set_search_bounds(map:L.Map, result:any) {
 
 let myMap:L.Map|null = null;
 
-function do_zoom(group: typeof LMarker[]) {
+function fit(group: L.LatLngExpression[]) {
   const valid_markers = group.filter(x => x != null);
   if(!valid_markers) {
     console.log("No valid markers")
@@ -60,8 +59,7 @@ function do_zoom(group: typeof LMarker[]) {
   let lat_max = -Number.MAX_VALUE;
   let lng_min = Number.MAX_VALUE;
   let lng_max = -Number.MAX_VALUE;
-  for(const m of valid_markers) {
-    const pos = m.latLng as L.LatLngExpression;
+  for(const pos of valid_markers) {
     if(isLatLngTuple(pos)) {
       if(pos[0] < lat_min) lat_min = pos[0];
       if(pos[0] > lat_max) lat_max = pos[0];
@@ -81,7 +79,10 @@ function do_zoom(group: typeof LMarker[]) {
   });
 }
 
-watch(markers, (value_new, _) => { if(value_new) do_zoom(value_new)}, {deep: true});
+watch(markers, (value_new, _) => {
+  if(value_new)
+    fit(value_new.map(x => x.getLatLng()))
+}, {deep: true});
 
 function mapReady(map:L.Map) {
   myMap = map;
@@ -90,7 +91,7 @@ function mapReady(map:L.Map) {
   map.on('geosearch/showlocation', hotfix_set_search_bounds.bind(null, map));
 
   map.zoomControl.setPosition("topleft")
-  map.removeControl(map.attributionControl);
+  map.attributionControl.setPrefix('<a href="https://leafletjs.com/">Leaflet</a>');
 
   const el = map.getContainer();
   for(const e of el.getElementsByClassName("leaflet-right")) {
@@ -100,7 +101,6 @@ function mapReady(map:L.Map) {
   }
 }
 
-
 async function get_data() {
   houses.value = await load_first();
 }
@@ -108,12 +108,6 @@ async function get_data() {
 onBeforeMount(() => {
   get_data();
 })
-
-function get_entity_by_id(id?:string) {
-  if(!id) return undefined;
-
-  return entities.entities.find(x => x.id == id);
-}
 
 function listReady(context: typeof LControl) {
   context.setPosition("topright");
@@ -124,23 +118,15 @@ function filterReady(context: typeof LControl) {
 }
 
 function listItemClicked(id:string) {
-  if(!myMap) return;
+  if(!markers.value) return;
 
-  // const m = markers.value?.find(x => x.name == id);
-  // if(!m) return;
-
-  // console.log(m.name);
-  // console.log(m.getLatLng())
-  myMap.eachLayer(layer => {
-    if (layer.options.attribution == id) {
-        const m = layer as L.Marker;
-        m.openPopup()
-        setTimeout(() => {
-          myMap?.flyTo(m.getLatLng(), 16, fly_options),
-          2000
-        });
+  for(const marker of markers.value) {
+    if(marker.getID() == id) {
+      myMap?.flyTo(marker.getLatLng(), 16, fly_options);
+      setTimeout(() => {marker.openPopup();}, fly_options.duration*1000);
+      return;
     }
-  });
+  }
 }
 
 function filtersChanged(filters: any) {
@@ -153,19 +139,10 @@ function filtersChanged(filters: any) {
     <l-tile-layer
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       layer-type="base"
+      attribution='Data by &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, under <a href="https://opendatacommons.org/licenses/odbl/">ODbL.</a>'
       name="OpenStreetMap"
     ></l-tile-layer>
-    <!-- <l-control>{{searchControl.getContainer() }}</l-control> -->
-    <l-marker v-for="[key, house] of houses" ref="markers" :attribution="key" :lat-lng="house.location as L.PointTuple">
-      <l-popup>
-        <PopupComponent
-          :id="key"
-          :house="house.properties"
-          :operator="get_entity_by_id(house.properties.operator)"
-          :manager="get_entity_by_id(house.properties.manager) ?? default_manager"
-        ></PopupComponent>
-      </l-popup>
-    </l-marker>
+    <MarkerComponent v-for="[key, house] of houses" ref="markers" :house="house" :id="key"/>
     <l-control id="house-filter" class="leaflet-bar leaflet-touch" @ready="filterReady" :disable-scroll-propagation="true">
       <HouseFilterComponent @changed="filtersChanged"/>
     </l-control>
@@ -183,7 +160,7 @@ function filtersChanged(filters: any) {
   width: 30vw;
   overflow: scroll;
   padding: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   flex: auto;
   flex-grow: 1;
 }
