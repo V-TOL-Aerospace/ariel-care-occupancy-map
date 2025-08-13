@@ -23,12 +23,18 @@ const fly_options = {
 
 const houses = ref<HouseList>(new Map());
 
+function colored_icon(color:string) {
+  return new L.Icon.Default({
+    className: `l-marker-${color}`,
+  });
+}
+
 const provider = new OpenStreetMapProvider();
 const searchControl = GeoSearchControl({
   provider: provider,
   retainZoomLevel: true,
   marker: {
-    icon: new L.Icon.Default({ className: "l-marker-red"} )
+    icon: colored_icon("red"),
   }
 });
 
@@ -53,7 +59,7 @@ function clickMarkerToggle(loc:L.LatLng) {
   if(!myMap)
     return;
 
-  click_marker = new L.Marker(loc, {icon: new L.Icon.Default({className: "l-marker-green"})});
+  click_marker = new L.Marker(loc, {icon: colored_icon("green")});
   click_marker.addTo(myMap);
 }
 
