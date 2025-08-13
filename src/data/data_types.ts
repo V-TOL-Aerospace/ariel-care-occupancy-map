@@ -6,6 +6,7 @@ export interface EntityProperties {
     web?: string
     email?: string
     phone?: string
+    capabilities?: string[]
 }
 
 export interface OccupationProperties {
@@ -14,7 +15,7 @@ export interface OccupationProperties {
     hospice?:number,
 }
 
-export type HouseStatus = "ready" | "planned" | "construction";
+export type HouseStatus = "available" | "planned" | "construction";
 
 export interface HouseProperties {
     name: string,
@@ -26,6 +27,7 @@ export interface HouseProperties {
     operator?: string,
     reserve_url?: URL,
     image?: URL,
+    floorplan?: URL,
 }
 
 export interface HouseEntry {

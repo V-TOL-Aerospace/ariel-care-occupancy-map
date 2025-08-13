@@ -7,8 +7,8 @@ import { isLatLngTuple, type HouseList } from "@/data/data_types";
 
 import 'leaflet-geosearch/dist/geosearch.css';
 import "leaflet/dist/leaflet.css";
-import L, { LatLng } from "leaflet";
-import { LMap, LTileLayer, LMarker, LControl } from "@vue-leaflet/vue-leaflet";
+import L, { icon } from "leaflet";
+import { LMap, LTileLayer, LControl } from "@vue-leaflet/vue-leaflet";
 import { GeoSearchControl, OpenStreetMapProvider} from 'leaflet-geosearch';
 import { load_first } from "@/data/loader";
 import MarkerComponent from "./MarkerComponent.vue";
@@ -23,15 +23,19 @@ const fly_options = {
 
 const houses = ref<HouseList>(new Map());
 
-function onMapClick(e:L.LeafletMouseEvent) {
-  console.log(`Click: [${e.latlng.lat}, ${e.latlng.lng}]`);
-}
-
 const provider = new OpenStreetMapProvider();
 const searchControl = GeoSearchControl({
   provider: provider,
   retainZoomLevel: true,
+  marker: {
+    icon: new L.Icon.Default({ className: "l-marker-red"} )
+  }
 });
+
+function onMapClick(e:L.LeafletMouseEvent) {
+  console.log(`Click: [${e.latlng.lat}, ${e.latlng.lng}]`);
+  searchControl.close();
+}
 
 function hotfix_set_search_bounds(map:L.Map, result:any) {
   if(!result.location) {

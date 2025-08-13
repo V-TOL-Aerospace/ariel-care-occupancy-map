@@ -1,0 +1,27 @@
+.l-marker-red {
+    filter: hue-rotate(140deg);
+}
+
+.l-marker-purple {
+    filter: hue-rotate(40deg);
+}
+
+.l-marker-pink {
+    filter: hue-rotate(90deg);
+}
+
+.l-marker-orange {
+    filter: hue-rotate(160deg);
+}
+
+.l-marker-brown {
+    filter: hue-rotate(200deg);
+}
+
+.l-marker-forest {
+    filter: hue-rotate(240deg);
+}
+
+.l-marker-green {
+    filter: hue-rotate(280deg);
+}
