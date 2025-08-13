@@ -10,13 +10,14 @@
 
 import parsePhoneNumber from 'libphonenumber-js'
 
-const props = defineProps<{
+defineProps<{
   name: string,
   address: string,
   web?: string,
   email?: string,
   phone?: string,
   reserve_link?: URL,
+  capbilities?: string[],
 }>()
 
 function pretty_print_phone(num:string) {
@@ -31,8 +32,12 @@ function uri_phone(num:string) {
 </script>
 
 <template>
-  <div>{{ name }}</div>
+  <h2>{{ name }}</h2>
   <div>{{ address }}</div>
+  <div v-if="capbilities && capbilities.length">Capabilities:</div>
+  <ul v-if="capbilities && capbilities.length">
+    <li v-for="c of capbilities">{{ c }}</li>
+  </ul>
   <section>
     <!-- <header>
       <div class="col">Column A</div>

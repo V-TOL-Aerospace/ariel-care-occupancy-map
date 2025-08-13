@@ -7,11 +7,13 @@
     "properties": {
       "name": "Maryborough3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/53GS-MAR-facade-768x511.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/maryborough4-bed-4-bath-ooa/"
     }
@@ -24,11 +26,13 @@
     "properties": {
       "name": "Caboolture4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/11PS-CAB-facade-768x427.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture4-bed-4-bath-ooa-2/"
     }
@@ -41,11 +45,13 @@
     "properties": {
       "name": "Caboolture4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/18PS-CAB-facade-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture4-bed-4-bath-ooa-3/"
     }
@@ -58,11 +64,13 @@
     "properties": {
       "name": "Caboolture3 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/23KS-CAB-facade.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture4-bed-4-bath-ooa-4/"
     }
@@ -75,11 +83,13 @@
     "properties": {
       "name": "Bray Park – 3 Bed, 4 bath +OOA+ second living area",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/Bray-Park.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/bray-park4-bed-4-bath-ooa/"
     }
@@ -92,11 +102,13 @@
     "properties": {
       "name": "Maryborough2 Bed, 2 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/07/70-jupiter-street-maryborough-768x575.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/maryborough2-bed-2-bath-ooa/"
     }
@@ -109,11 +121,13 @@
     "properties": {
       "name": "Ripley4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/32LD-RIP-Facade-768x399.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/ripley4-bed-4-bath-ooa/"
     }
@@ -126,11 +140,13 @@
     "properties": {
       "name": "Jimboomba2 Bed, 2 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/17MA-JIM-facade-768x504.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/jimboomba3-bed-3-bath-ooa/"
     }
@@ -143,11 +159,13 @@
     "properties": {
       "name": "Loganholme3 Bed, 4 Bath +OOA + additional breakout/living room",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/1HC-LOGH-facade-768x561.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganholme4-bed-4-bath-ooa/"
     }
@@ -160,11 +178,13 @@
     "properties": {
       "name": "Heritage Park4 Bed, 4 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/02AS-HER-Facade-768x484.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/heritage-park4-bed-4-bath-ooa/"
     }
@@ -177,11 +197,13 @@
     "properties": {
       "name": "Ebbw Vale3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/08/64BD-EBB-Facade-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/ebbw-vale3-bed-3-bath-ooa/"
     }
@@ -194,11 +216,13 @@
     "properties": {
       "name": "UrraweenFREE MOVE IN GIFT!……..LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/67-pantlines-ln-Urraween.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/urraween4-bed-4-bath-ooa-2/"
     }
@@ -211,11 +235,13 @@
     "properties": {
       "name": "Urraween“FREE MOVE IN GIFT!……..LIMITED TIME ONLY!”",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/VR-promo-57-Conservation-Dv-Urraween.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/urraween4-bed-4-bath-ooa/"
     }
@@ -228,11 +254,13 @@
     "properties": {
       "name": "Caboolture4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/07/10OS-CAB-facade-768x546.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture4-bed-4-bath-ooa/"
     }
@@ -245,11 +273,13 @@
     "properties": {
       "name": "Park RidgeFREE MOVE IN GIFT!……….LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/wheeler-st-park-ridge.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/park-ridge3-bed-3-bath-ooa/"
     }
@@ -262,11 +292,13 @@
     "properties": {
       "name": "Brassall3 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/07/IMG_8190-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/brassall4-bed-4-bath-ooa/"
     }
@@ -279,11 +311,13 @@
     "properties": {
       "name": "Strathpine‘FREE MOVE IN GIFT!’ 3 Bed, 4 Bath +OOA + extra living area",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/Ariel-Care-Portal-Promo-Tile-5.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/strathpine4-bed-4-bath-ooa/"
     }
@@ -296,11 +330,13 @@
     "properties": {
       "name": "Murrumba DownsFREE MOVE IN GIFT!……..LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/Murrumba-Downs-front-of-house-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/murrumba-downs2-bed-2-bath-ooa/"
     }
@@ -313,11 +349,13 @@
     "properties": {
       "name": "Marsden3 Bed, 3 Bath +OOA + additional living / breakout room",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/07/20230607_142022-768x1024.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/marsden4-bed-4-bath-ooa/"
     }
@@ -330,11 +368,13 @@
     "properties": {
       "name": "LeichhardtFREE MOVE IN GIFT + MOVING COSTS – LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 5
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/Ariel-Care-Leichhardt-offer-2-768x644.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/leichhardt5-bed-5-bath-ooa/"
     }
@@ -347,11 +387,13 @@
     "properties": {
       "name": "Loganlea3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/11/LOGL-SS-facade-768x509.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganlea3-bed-3-bath-ooa-2/"
     }
@@ -364,11 +406,13 @@
     "properties": {
       "name": "Logan Reserve3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/12/LOGR-24MC-Facade-768x517.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/logan-reserve3-bed-3-bath-ooa/"
     }
@@ -381,11 +425,13 @@
     "properties": {
       "name": "CabooltureFREE MOVE IN GIFT!……….LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/sedge-st-caboolture.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture3-bed-3-bath-ooa/"
     }
@@ -398,11 +444,13 @@
     "properties": {
       "name": "Lawnton3 Bed, 4 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2022/04/LAW40OC-Facade-768x502.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/lawnton4-bed-4-bath-ooa/"
     }
@@ -415,11 +463,13 @@
     "properties": {
       "name": "GleneagleFREE MOVE IN GIFT!……..LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/07/Free-VR-Headset-Offer-promo-tile-768x644.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/gleneagle4-bed-4-bath-ooa/"
     }
@@ -432,11 +482,13 @@
     "properties": {
       "name": "Narangba3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/NAR-09TTst-facade-768x517.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/narangba3-bed-3-bath-ooa/"
     }
@@ -449,11 +501,13 @@
     "properties": {
       "name": "Bray Park3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/65-walsham-768x575.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/bray-park3-bed-3-bath-ooa/"
     }
@@ -466,11 +520,13 @@
     "properties": {
       "name": "BelivahSave with Solar",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/03/Belivah-facade2-768x530.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/belivahsave-with-solar/"
     }
@@ -483,11 +539,13 @@
     "properties": {
       "name": "Branyan3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/L0027SHAR-Marion-Facade-Photo-2.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/branyan3-bed-3-bath-ooa/"
     }
@@ -500,11 +558,13 @@
     "properties": {
       "name": "Branyan3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/10-sharp-crescent-1-768x575.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/branyan3-bed-3-bath-ooa-2/"
     }
@@ -517,11 +577,13 @@
     "properties": {
       "name": "Redbank4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/web-RBKSS-entry.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/redbank4-bed-4-bath-ooa/"
     }
@@ -534,11 +596,13 @@
     "properties": {
       "name": "Deception Bay3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/07/Dolphin-street-main-1-768x648.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/deception-bay3-bed-3-bath-ooa-2/"
     }
@@ -551,11 +615,13 @@
     "properties": {
       "name": "BundambaSave with Solar – 3 bedroom HPS House",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/05/front-of-house--768x431.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/bundambasave-with-solar-3-bedroom-hps-house/"
     }
@@ -568,11 +634,13 @@
     "properties": {
       "name": "RiverviewFree move in gift – limited time only!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/Ariel-Care-Portal-Promo-Tile-7.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/riverview3-bed-3-bath-ooa/"
     }
@@ -585,11 +653,13 @@
     "properties": {
       "name": "Burpengary3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/100-fraser-drive-768x398.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/burpengary3-bed-3-bath-ooa/"
     }
@@ -602,11 +672,13 @@
     "properties": {
       "name": "Caboolture3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/07/house-pic-4-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture3-bed-3-bath-ooa-2/"
     }
@@ -619,11 +691,13 @@
     "properties": {
       "name": "UrraweenFREE MOVE IN GIFT!……..LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/05/SDASH-Facade01-15-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/urraween3-bed-3-bath-ooa/"
     }
@@ -636,11 +710,13 @@
     "properties": {
       "name": "Marsden2 Bed, 2 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/74-kerry-768x484.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/marsden2-bed-2-bath-ooa/"
     }
@@ -653,11 +729,13 @@
     "properties": {
       "name": "Marsden2 Bed, 1 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/08/76-Kerry-768x484.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/marsden2-bed-1-bath-ooa/"
     }
@@ -670,11 +748,13 @@
     "properties": {
       "name": "Cleveland2 Bed, 2 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/03/gnhn-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/cleveland2-bed-2-bath-ooa/"
     }
@@ -687,11 +767,13 @@
     "properties": {
       "name": "Loganlea3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2021/08/81RS-LOGL-facade-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganlea3-bed-3-bath-ooa-copy/"
     }
@@ -704,11 +786,13 @@
     "properties": {
       "name": "Marsden3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/03/SDASH-Facade01-12-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/marsden3-bed-3-bath-ooa-2/"
     }
@@ -721,11 +805,13 @@
     "properties": {
       "name": "Ellen Grove3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2022/11/uhyp0jyeruhpzdmkdkxd-768x373.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/ellen-grove3-bed-3-bath-ooa-2/"
     }
@@ -738,11 +824,13 @@
     "properties": {
       "name": "Redbank2 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/3-moore-street-002-1-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/redbankplains2-bed-3-bath-ooa/"
     }
@@ -755,11 +843,13 @@
     "properties": {
       "name": "Caboolture South3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/26-orchard-street-768x575.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture-south3-bed-3-bath-ooa/"
     }
@@ -772,11 +862,13 @@
     "properties": {
       "name": "Greenbank3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/Outside-25.09.24-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/greenbank3-bed-3-bath-ooa-2/"
     }
@@ -789,11 +881,13 @@
     "properties": {
       "name": "Sunnybank3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/Sunnybank-facade-768x529.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/sunnybank3-bed-3-bath-ooa/"
     }
@@ -806,11 +900,13 @@
     "properties": {
       "name": "Narangba2 Bed, 2 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/05/Narangba-1-1-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/high-physical-support-sda-house-in-narangba/"
     }
@@ -823,11 +919,13 @@
     "properties": {
       "name": "GoodnaFREE MOVE IN GIFT! ………….. LIMITED TIME ONLY!",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/goodna-stuart.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/goodna/"
     }
@@ -840,11 +938,13 @@
     "properties": {
       "name": "Beenleigh4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/06/image3-768x576.jpeg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/beenleigh4-bed-4-bath-ooa/"
     }
@@ -857,11 +957,13 @@
     "properties": {
       "name": "Cleveland3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/Cleveland-7SmS-Facade-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/cleveland3-bed-3-bath-ooa/"
     }
@@ -874,11 +976,13 @@
     "properties": {
       "name": "Redland Bay3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/10/Dart-street-front-1-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/redlandbay3-bed-3-bath-ooa/"
     }
@@ -891,11 +995,13 @@
     "properties": {
       "name": "Birkdale3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/birkdale-front-768x512.jpeg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/birkdale3-bed-3-bath-ooa/"
     }
@@ -908,11 +1014,13 @@
     "properties": {
       "name": "Palmview3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/Palmview-facade-768x524.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/palmview-hps-3bed-3-bath-ooa-2/"
     }
@@ -925,11 +1033,13 @@
     "properties": {
       "name": "Robust Home – Branyan, Bundaberg3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/11/5-Curlew-Exterior-768x524.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/branyan3-bed-3-bath-ooa-2-2/"
     }
@@ -942,11 +1052,13 @@
     "properties": {
       "name": "Robust Holmview2 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/PC-1.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/holmview2-bed-3-bath-ooa/"
     }
@@ -959,11 +1071,13 @@
     "properties": {
       "name": "Acacia Ridge3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/135-mortimer-road-768x575.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/acaciaridge-bed-3-bath-ooa-2/"
     }
@@ -976,11 +1090,13 @@
     "properties": {
       "name": "Cleveland3 Bed w/ private courtyards",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/Cleve-5ss-Facade02-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/cleveland3-bed-3-bath-ooa-2/"
     }
@@ -993,11 +1109,13 @@
     "properties": {
       "name": "Kallangur 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/12/IMG_20241022_084106-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/kallangur-3-bed-3-bath/"
     }
@@ -1010,11 +1128,13 @@
     "properties": {
       "name": "Strathpine3 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/12/Ulmarra-facade-768x521.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/strathpine4-bed-4-bath-ooa-2/"
     }
@@ -1027,11 +1147,13 @@
     "properties": {
       "name": "Loganlea3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/Finch-Court-edit-number-out-768x427.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganlea3-bed-3-bath-ooa-3-2/"
     }
@@ -1044,11 +1166,13 @@
     "properties": {
       "name": "Heritage Park3 Bed, 3 bath +OOA in Heritage Park",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/heritage-park-768x576.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/heritage-park-hps-3-bed-4-bath-ooa/"
     }
@@ -1061,11 +1185,13 @@
     "properties": {
       "name": "Robust Gleneagle2 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/03/Maher-front-768x481.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/gleneagle-robust-2bed-ooa-2/"
     }
@@ -1078,11 +1204,13 @@
     "properties": {
       "name": "Nirimba3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/02/Nirimba-768x554.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/nirimba-hps-4bed-4-bath-ooa-2/"
     }
@@ -1095,11 +1223,13 @@
     "properties": {
       "name": "One Mile“FREE MOVE IN GIFT!  Limited time only.” 4 Bed, bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/Reddy-street-one-mile-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/one-mile-sda/"
     }
@@ -1112,11 +1242,13 @@
     "properties": {
       "name": "Newly complete and ready to move in – perfectly located apartment living in Nundah",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 1
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/04/Exterior-small-edited-768x576.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/perfectly-located-apartment-living-in-nundah/"
     }
@@ -1129,11 +1261,13 @@
     "properties": {
       "name": "Loganlea‘FREE MOVE IN GIFT!’ 2 Bed, 2 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/07/Ariel-Care-Portal-Promo-Tile-6.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganlea3-bed-3-bath-ooa-3-2-2/"
     }
@@ -1146,11 +1280,13 @@
     "properties": {
       "name": "Nirimba, Sunshine Coast3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/Frangipani-edit-Front-768x531.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/nirimba-3-bed-3-bath-ooa-3-2-2-2/"
     }
@@ -1163,11 +1299,13 @@
     "properties": {
       "name": "Algester 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/IMG_3663-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/algester-3-bed-3-bath/"
     }
@@ -1180,11 +1318,13 @@
     "properties": {
       "name": "Slacks Creek 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/IMG_4067.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/slacks-creek-3-bed-3-bath/"
     }
@@ -1197,11 +1337,13 @@
     "properties": {
       "name": "Burleigh Heads 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/09/Bower-Burleigh-facade.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/burleigh-heads-sda-3bedroom-3bathroom/"
     }
@@ -1214,11 +1356,13 @@
     "properties": {
       "name": "Banya, Sunshine Coast 3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/Conway-facade-768x438.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/banya-sc-sda-3bedroom-3bathroom/"
     }
@@ -1231,11 +1375,13 @@
     "properties": {
       "name": "Sunnybank Hills‘FREE MOVE IN GIFT!’ 3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/Ariel-Care-Portal-Promo-Tile-2.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/sunnybank3-bed-3-bath-ooa-2/"
     }
@@ -1248,11 +1394,13 @@
     "properties": {
       "name": "‘FREE MOVE IN GIFT’ Coomera 2 bed + OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/Ariel-Care-Portal-Promo-Tile-3.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/coomera-2bedooa/"
     }
@@ -1265,11 +1413,13 @@
     "properties": {
       "name": "Thornlands3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/front-768x548.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/thornlands3-bed-3-bath-ooa-2-2-2/"
     }
@@ -1282,11 +1432,13 @@
     "properties": {
       "name": "Heathwood 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/8-Charleston-Heathwood-facade-768x525.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/heathwood-sda-3bedroom-3bathroom/"
     }
@@ -1299,11 +1451,13 @@
     "properties": {
       "name": "Caboolture4 Bed, 4 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 4
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/CAB-27LS-Facade-768x443.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/caboolture4-bed-4-bath-ooa-2-2/"
     }
@@ -1316,11 +1470,13 @@
     "properties": {
       "name": "Loganlea3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/12/SDASH-Facade01-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/loganlea3-bed-3-bath-ooa-2-2/"
     }
@@ -1333,11 +1489,13 @@
     "properties": {
       "name": "Banya, Sunshine Coast 3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/11/PROFESSIONAL-PHOTO-LOW-RES-11-02.05.2025-1.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/banya-sda-3bedroom-3bathroom/"
     }
@@ -1350,11 +1508,13 @@
     "properties": {
       "name": "Banya, Sunshine Coast 3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/11/Murray-Banya-backyard-768x511.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/banya-sda-3bedroom-3bathroom-2/"
     }
@@ -1367,11 +1527,13 @@
     "properties": {
       "name": "‘FREE MOVE IN GIFT!’ 3 Bed, 3 Bath +OOA Pallara",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/11/Ariel-Care-Portal-Promo-Tile-4.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/pallara-sda-3bedroom-3bathroom-2-2-2-2-2/"
     }
@@ -1384,11 +1546,13 @@
     "properties": {
       "name": "Boondall, 3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/11/QLD7825--768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/boondall-sda-3bedroom-3bathroom/"
     }
@@ -1401,11 +1565,13 @@
     "properties": {
       "name": "New 1 bedroom apartment in Nundah",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 1
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/12/8-on-Eton-Furnished-Apt-102-46-768x512.jpeg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/perfectly-located-apartment-living-in-nundah-2/"
     }
@@ -1418,11 +1584,13 @@
     "properties": {
       "name": "3bedroom + OOA in Lawnton, Brisbane",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/SDASH-Facade01-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/4070/"
     }
@@ -1435,11 +1603,13 @@
     "properties": {
       "name": "3 Bedroom + OOA in Boondall",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 0
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/k80nozu4xoqxkof9nnh7.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-ooa-in-boondall/"
     }
@@ -1452,11 +1622,13 @@
     "properties": {
       "name": "3 Bedroom + OOA in Heathwood",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/6-Charleston-Heathwood-facade-rotated-e1751254129621-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-ooa-in-heathwood/"
     }
@@ -1469,11 +1641,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Heathwood, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/Panorama-Thornlands-Montrose-facade-768x548.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-in-heathwood-queensland/"
     }
@@ -1486,11 +1660,13 @@
     "properties": {
       "name": "3 Bedroom home + OOA in Birkdale",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 0
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/Jesray-facade-edited-768x602.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-ooa-in-birkdale/"
     }
@@ -1503,11 +1679,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Slacks Creek, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/1.-Paradise-Rd-Slacks-Creek--768x531.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-in-slacks-creek-queensland/"
     }
@@ -1520,11 +1698,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Slacks Creek, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/09/SDA-Smart-Homes-Ind-Harbour-facade-render-768x432.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-in-slacks-creek-queensland-2/"
     }
@@ -1537,11 +1717,13 @@
     "properties": {
       "name": "Southport3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/03/105-Johnston-Street-Southport29-768x512.jpeg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/coomera3-bed-3-bath-ooa-2/"
     }
@@ -1554,11 +1736,13 @@
     "properties": {
       "name": "Beenleigh…",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/32LD-RIP-living-768x470.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-beenleigh-queensland-2/"
     }
@@ -1571,11 +1755,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Capalaba, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/05/Front-edited-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-capalaba-queensland-2/"
     }
@@ -1588,11 +1774,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Underwood, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2024/10/Gallery-Surrealist-Facade-12m.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-in-slacks-creek-queensland-2-2/"
     }
@@ -1605,11 +1793,13 @@
     "properties": {
       "name": "Ellen Grove3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2022/11/ayf29f0k30bskjhdmkx4-768x576.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/ellen-grove3-bed-3-bath-ooa-2-2/"
     }
@@ -1622,11 +1812,13 @@
     "properties": {
       "name": "NOW INCLUDING ARIEL CARE TECHNOLOGY.",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/05/Ariel-Care-Capalaba-Leichhardt-Home-NEW-tech-1-768x644.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-capalaba-queensland-2-2/"
     }
@@ -1639,11 +1831,13 @@
     "properties": {
       "name": "Marsden3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/marsden3-bed-3-bath-ooa-2-2/"
     }
   },
@@ -1655,11 +1849,13 @@
     "properties": {
       "name": "Bethania2 Bed, 2 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/06/Item-2-1.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/bethania-2-bed-2-bath-ooa-2/"
     }
@@ -1672,11 +1868,13 @@
     "properties": {
       "name": "3 Bedroom home with OOA in Heathwood, Queensland",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/02/SDA-Kitchen-1.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/3-bedroom-home-with-ooa-in-heathwood-queensland-2/"
     }
@@ -1689,11 +1887,13 @@
     "properties": {
       "name": "Burleigh Heads 3 Bed, 3 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/07/Gallery-Contemporary-Facade-12m.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/burleigh-heads-sda-3bedroom-3bathroom-2/"
     }
@@ -1706,11 +1906,13 @@
     "properties": {
       "name": "Cleveland3 Bed, 3 Bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 3
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2023/06/SDASH-Facade01-2-768x512.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/cleveland3-bed-3-bath-ooa-3/"
     }
@@ -1723,11 +1925,13 @@
     "properties": {
       "name": "Robust Maryborough2 Bed, 2 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 2
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/08/C-Fridell-Site-Photo-736-Kent-Street-1-768x408.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/maryborough2-bed-2-bath-ooa-2/"
     }
@@ -1740,11 +1944,13 @@
     "properties": {
       "name": "Robust Maryborough1 Bed, 1 bath +OOA",
       "address": "Address on request",
-      "status": "construction",
+      "status": "available",
       "occupation": {
         "rooms": 1
       },
       "manager": "entity/sda_smart_homes",
+      "operator": "entity/sil_private",
+      "floorplan": "/sda-platinum-3-floor-plan-282m2-light.png",
       "image": "https://thedisabilityhousingcentre.com.au/wp-content/uploads/2025/08/C-Fridell-Site-Photo-736-Kent-Street-1-768x408.jpg",
       "reserve_url": "https://thedisabilityhousingcentre.com.au/property/maryborough1-bed-1-bath-ooa-1/"
     }

@@ -14,6 +14,21 @@
             "address": "SIL Address",
             "web": "sil.com.au",
             "email": "info@sil.com.au"
+        },
+        {
+            "id": "entity/sil_private",
+            "name": "[Private SIL]",
+            "address": "Address on enquiry",
+            "web": "sdasmarthomes.com.au",
+            "email": "info@sdasmarthomes.com.au",
+            "phone": "+61738993873",
+            "capabilities": [
+                "Robust Care",
+                "Burn Care",
+                "Mental Health",
+                "Mobility Adjustment",
+                "Rehabilitation"
+            ]
         }
     ]
 }

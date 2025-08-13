@@ -11,7 +11,7 @@ function _clean_properties(v:any): HouseProperties {
     let h:HouseProperties = {
         name: v.name ?? "",
         address: v.address ?? "",
-        status: v.status ?? "",
+        status: v.status ?? "available",
         occupation: v.occupation ?? "",
         manager: v.manager ?? ""
     }
@@ -24,6 +24,8 @@ function _clean_properties(v:any): HouseProperties {
         h.reserve_url = new URL(v.reserve_url);
     if(v.image)
         h.image = new URL(v.image);
+    if(v.floorplan)
+        h.floorplan = new URL(v.floorplan, location.toString()); //TODO: Probably not this for real one
 
     return h;
 }
