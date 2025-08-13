@@ -8,7 +8,7 @@ import { isLatLngTuple, type HouseList } from "@/data/data_types";
 import 'leaflet-geosearch/dist/geosearch.css';
 import "leaflet/dist/leaflet.css";
 import L, { icon } from "leaflet";
-import { LMap, LTileLayer, LControl } from "@vue-leaflet/vue-leaflet";
+import { LMap, LTileLayer, LControl, LMarker } from "@vue-leaflet/vue-leaflet";
 import { GeoSearchControl, OpenStreetMapProvider} from 'leaflet-geosearch';
 import { load_first } from "@/data/loader";
 import MarkerComponent from "./MarkerComponent.vue";
@@ -32,9 +32,35 @@ const searchControl = GeoSearchControl({
   }
 });
 
+let myMap:L.Map|null = null;
+let click_marker:L.Marker|null = null;
+
+function clickMarkerClear() {
+  if(!click_marker)
+    return;
+
+  click_marker.remove();
+  click_marker = null;
+}
+
+function clickMarkerToggle(loc:L.LatLng) {
+  //If we already had a marker, clear it
+  if(click_marker) {
+    clickMarkerClear();
+    return;
+  }
+
+  if(!myMap)
+    return;
+
+  click_marker = new L.Marker(loc, {icon: new L.Icon.Default({className: "l-marker-green"})});
+  click_marker.addTo(myMap);
+}
+
 function onMapClick(e:L.LeafletMouseEvent) {
   console.log(`Click: [${e.latlng.lat}, ${e.latlng.lng}]`);
   searchControl.close();
+  clickMarkerToggle(e.latlng);
 }
 
 function hotfix_set_search_bounds(map:L.Map, result:any) {
@@ -43,14 +69,14 @@ function hotfix_set_search_bounds(map:L.Map, result:any) {
     return;
   }
 
+  clickMarkerClear();
+
   map.flyToBounds(result.location?.bounds, fly_options);
 
   // searchControl.clearResults();
   console.log(`Result address: ${result.location.label}`);
   console.log(`Result geo: [${result.location.x}, ${result.location.y}]`);
 }
-
-let myMap:L.Map|null = null;
 
 function fit(group: L.LatLngExpression[]) {
   const valid_markers = group.filter(x => x != null);
